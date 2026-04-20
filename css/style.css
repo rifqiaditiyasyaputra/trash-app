@@ -105,7 +105,7 @@ ul {
     /* TODO A1: display: flex; gap antar item */
 }
 
-.nav-links a {
+ .nav-links a {
     /* TODO A1: warna, font-size, efek hover */
 }
 
@@ -156,7 +156,6 @@ ul {
    ✏️  ANGGOTA 2 — FEATURES SECTION
    Branch: feature/features
    ============================================================ */
-
 .features {
     /* TODO A2: padding section, background alternatif (sedikit beda dari hero) */
 }
@@ -187,7 +186,7 @@ ul {
     /* TODO A2: font-size besar (2rem), display: block; margin-bottom */
 }
 
-.feature-card h3 {
+ .feature-card h3 {
     /* TODO A2: font-size, font-weight, margin-bottom kecil */
 }
 
@@ -201,67 +200,180 @@ ul {
    Branch: feature/how-it-works
    ============================================================ */
 
+/* -- How It Works Section ----------------------------------- */
+/* ============================================================
+   ✏️  ANGGOTA 3 — HOW IT WORKS, CTA FORM, & IMPACT STATS
+   Branch: feature/how-it-works
+   ============================================================ */
+
+/* -- How It Works Section ----------------------------------- */
 .how-it-works {
-    /* TODO A3: padding section */
+    padding: var(--spacing-lg) var(--spacing-md);
+    background: #eafaf1; /* Warna hijau pastel lembut */
+    border-top: 5px solid #16a34a; /* Warna hijau utama */
 }
 
 .how-it-works h2 {
-    /* TODO A3: text-align center, margin-bottom */
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    color: #15803d; /* Hijau lebih gelap untuk teks utama */
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .steps-grid {
-    /* TODO A3: layout 3 kolom (mirip features-grid tapi untuk langkah)
-     Panduan: display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
-  */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
 }
 
 .step-card {
-    /* TODO A3: text-align center, padding, border atau border-top accent */
+    text-align: center;
+    padding: var(--spacing-sm);
+    border-top: 4px solid #22c55e; /* Warna hijau aksen */
+    background: #ffffff; /* Putih bersih untuk kontras */
+    border-radius: var(--radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .step-number {
-    /* TODO A3: tampilkan nomor langkah besar
-     Panduan:
-     - font-size: 2.5rem; font-weight: 800;
-     - color: var(--color-primary); display: block;
-  */
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #16a34a; /* Warna hijau utama */
+    display: block;
+    margin-bottom: var(--spacing-sm);
+}
+
+.step-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: #065f46; /* Hijau lebih gelap untuk heading */
+}
+
+.step-card p {
+    font-size: 1rem;
+    color: #64748b; /* Warna teks muted */
 }
 
 /* -- CTA / Form Section ------------------------------------- */
+
 .cta-section {
-    /* TODO A3: background berbeda (pakai var(--color-primary) dengan opacity rendah), padding */
+    background: #f0fdf4; /* Warna hijau pastel lembut */
+    padding: var(--spacing-lg) var(--spacing-md);
+    border-top: 5px solid #22c55e; /* Warna hijau aksen */
 }
 
 .cta-section h2 {
-    /* TODO A3: text-align center, warna, margin-bottom */
+    text-align: center;
+    color: #15803d; /* Hijau utama untuk heading */
+    margin-bottom: var(--spacing-md);
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .cta-form {
-    /* TODO A3: layout form
-     Panduan:
-     - display: flex; flex-direction: column; gap: 0.75rem;
-     - max-width: 480px; margin: 0 auto;
-  */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 480px;
+    margin: 0 auto;
+    background: #ffffff; /* Putih untuk kontras */
+    padding: var(--spacing-md);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cta-form label {
-    /* TODO A3: font-size kecil, font-weight: 600 */
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #065f46; /* Hijau gelap untuk teks label */
 }
 
 .cta-form input {
-    /* TODO A3: styling input
-     Panduan:
-     - padding: 0.65rem 1rem; border-radius: var(--radius);
-     - border: 1px solid #d1d5db;
-     - font-size: 1rem;
-  */
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+    background: #f9fafb; /* Warna abu-abu terang */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .cta-form input:focus {
-    /* TODO A3: outline: 2px solid var(--color-primary); outline-offset: 2px; border-color: transparent; */
+    outline: none;
+    border-color: #16a34a; /* Warna hijau utama */
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.2); /* Efek fokus hijau */
 }
 
+.cta-form button {
+    background: #16a34a; /* Warna hijau utama */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
 
+.cta-form button:hover {
+    background: #15803d; /* Hijau lebih gelap untuk hover */
+    transform: translateY(-2px);
+}
+
+/* -- Impact Stats Section ----------------------------------- */
+.impact-stats {
+    padding: var(--spacing-lg) var(--spacing-md);
+    background: #eafaf1; /* Warna hijau pastel lembut */
+    border-top: 5px solid #16a34a; /* Warna hijau utama */
+}
+
+.impact-stats h2 {
+    text-align: center;
+    color: #15803d; /* Hijau utama untuk heading */
+    margin-bottom: var(--spacing-md);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+    text-align: center;
+}
+
+.stat-card {
+    background: #ffffff; /* Putih untuk kontras */
+    padding: var(--spacing-sm);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #16a34a; /* Warna hijau utama */
+    margin-bottom: var(--spacing-sm);
+}
+
+.stat-card p {
+    font-size: 1rem;
+    color: #64748b; /* Warna teks muted */
+}
 /* ============================================================
    ✏️  ANGGOTA 4 — FOOTER & MEDIA QUERIES GLOBAL
    Branch: feature/footer-css

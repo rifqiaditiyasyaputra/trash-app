@@ -81,63 +81,61 @@
       -->
         </section>
 
-        <!-- ============================================================
+       <!-- ============================================================
       ✏️  ANGGOTA 3 — branch: feature/how-it-works
-      TUGAS:
-        1. Buat <section id="how-it-works"> dengan 3 langkah cara pakai:
-             Langkah 1: Upload foto sampah
-             Langkah 2: Kumpulkan poin
-             Langkah 3: Tukarkan reward
-        2. Buat <section id="cta"> dengan form pendaftaran:
-             - input name  (type="text",  required)
-             - input email (type="email", required)
-             - button submit
-        3. Tambahkan blok statistik dampak (angka nyata):
-             contoh: "1.200 kg", "3.400 pengguna", "500 titik terlaporkan"
-        4. CSS: .steps-grid (3 kolom), .step-card, .cta-form
-    ============================================================ -->
-
-        <section id="how-it-works" class="how-it-works">
-            <!-- TODO A3: isi 3 langkah cara kerja di sini -->
-            <!-- Contoh struktur:
-        <h2>Cara Kerja EcoTrack</h2>
-        <div class="steps-grid">
-          <div class="step-card">
+============================================================ -->
+<section id="how-it-works" class="how-it-works">
+    <h2>Cara Kerja EcoTrack</h2>
+    <div class="steps-grid">
+        <div class="step-card">
             <span class="step-number">01</span>
             <h3>Upload Foto</h3>
             <p>Foto sampah yang kamu kumpulkan atau pilah.</p>
-          </div>
-          <div class="step-card">
+        </div>
+        <div class="step-card">
             <span class="step-number">02</span>
             <h3>Dapat Poin</h3>
             <p>Sistem kami otomatis memberi poin dari setiap kontribusi.</p>
-          </div>
-          <div class="step-card">
-            <span class="step-number">03</span>
-            <h3>Tukarkan Reward</h3>
-            <p>Tukar poinmu dengan hadiah menarik dari mitra EcoTrack.</p>
-          </div>
         </div>
-      -->
-        </section>
+        <div class="step-card">
+            <span class="step-number">03</span>
+            <h3>Redeem Hadiah</h3>
+            <p>Tukar poinmu dengan hadiah menarik dari mitra EcoTrack.</p>
+        </div>
+    </div>
+</section>
 
-        <section id="cta" class="cta-section">
-            <!-- TODO A3: isi form waitlist di sini -->
-            <!-- Contoh struktur:
-        <h2>Bergabung Sekarang</h2>
-        <p>Jadilah bagian dari gerakan pengelolaan sampah yang lebih baik.</p>
-        <form class="cta-form" method="POST">
-          <label for="name">Nama kamu</label>
-          <input type="text"  id="name"  name="name"  placeholder="Nama lengkap" required>
-          <label for="email">Email kamu</label>
-          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
-          <button type="submit" class="btn-primary">Daftar Gratis</button>
-        </form>
-      -->
-        </section>
+<section id="cta" class="cta-section">
+    <h2>Bergabung Sekarang</h2>
+    <p>Jadilah bagian dari gerakan pengelolaan sampah yang lebih baik.</p>
+    <form class="cta-form" method="POST">
+        <label for="name">Nama kamu</label>
+        <input type="text" id="name" name="name" placeholder="Nama lengkap" required>
+        
+        <label for="email">Email kamu</label>
+        <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+        
+        <button type="submit" class="btn-primary">Bergabung Sekarang</button>
+    </form>
+</section>
 
-    </main>
-
+<section id="impact-stats" class="impact-stats">
+    <h2>Dampak Nyata</h2>
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>1.200 kg</h3>
+            <p>Sampah Dikelola</p>
+        </div>
+        <div class="stat-card">
+            <h3>3.400</h3>
+            <p>Pengguna Aktif</p>
+        </div>
+        <div class="stat-card">
+            <h3>500</h3>
+            <p>Titik Terlaporkan</p>
+        </div>
+    </div>
+</section>
     <!-- ============================================================
     ✏️  ANGGOTA 4 — branch: feature/footer-css
     TUGAS:
